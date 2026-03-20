@@ -1,66 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
 </head>
-
 <body>
 
-    <img src="img/FotoHV.jpeg" alt="PaulaC" width="200">
-
+  <header id="inicio">
+    <img src="img/FotoHV.jpeg" alt="Foto de Paula Calderon" width="200">
     <h1>Paula Andrea Calderon Quintero</h1>
 
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
     <section>
-        <h2>Sobre mí</h2>
-        <p>
-            Soy Tecnóloga en Desarrollo de Software y estudiante de Ingeniería de Sistemas en el ITM,
-            con interés en el desarrollo web y la creación de soluciones tecnológicas con impacto.
-            Cuento con conocimientos en desarrollo de aplicaciones, bases de datos y automatización
-            de procesos, y me destaco por ser una persona proactiva, organizada y con alta capacidad de aprendizaje.
-            Busco seguir creciendo profesionalmente y aportar valor en proyectos donde pueda
-            combinar lo técnico y lo creativo.
-        </p>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy Tecnóloga en Desarrollo de Software y estudiante de Ingeniería de Sistemas en el ITM,
+        con interés en el desarrollo web y la creación de soluciones tecnológicas con impacto.
+        Cuento con conocimientos en desarrollo de aplicaciones, bases de datos y automatización
+        de procesos, y me destaco por ser una persona proactiva, organizada y con alta capacidad
+        de aprendizaje. Busco seguir creciendo profesionalmente y aportar valor en proyectos donde
+        pueda combinar lo técnico y lo creativo.
+      </p>
     </section>
 
-    <section>
-        <h2>Redes sociales</h2>
-        <p>
-            <a href="https://www.linkedin.com/in/paula-andrea-calderon-quintero-40759226b" target="_blank">LinkedIn</a>
-        </p>
-        <p>
-            <a href="https://github.com/paucq" target="_blank">GitHub</a>
-        </p>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <ul>
+        <li>
+          <article>
+            <p>
+              <strong>NeuroLab</strong>: 
+              <em>
+                Aplicación web orientada al apoyo del área de permanencia estudiantil en el ITM,
+                desarrollada con React, TypeScript, Docker, Redis y SQL para optimizar procesos
+                y mejorar el seguimiento de estudiantes.
+              </em>
+            </p>
+            <a href="https://github.com/neurolab-team/proyecto-neurolab" target="_blank">Ver proyecto</a>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <p>
+              <strong>Venta de Vehículos</strong>: 
+              <em>
+                Aplicación web para la gestión y visualización de vehículos, desarrollada con
+                ASP.NET, C#, JavaScript, HTML y CSS.
+              </em>
+            </p>
+            <a href="https://github.com/Juandavm12/VentaVehiculos" target="_blank">Ver proyecto</a>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <p>
+              <strong>Agencia para Tramitar Visas</strong>: 
+              <em>
+                Aplicación web enfocada en la gestión de trámites de visas y organización de
+                información de usuarios, desarrollada con HTML, CSS y C#.
+              </em>
+            </p>
+            <a href="https://github.com/alejamc14/TramitesVisas" target="_blank">Ver proyecto</a>
+          </article>
+        </li>
+      </ul>
     </section>
 
-    <section>
-        <h2>Proyectos</h2>
-
-        <h3>NeuroLab</h3>
-        <p>
-            Desarrollo de una aplicación web orientada al apoyo del área de permanencia estudiantil en el ITM.
-            Implementada con React, TypeScript, Docker, Redis y base de datos SQL, enfocada en optimizar procesos
-            y mejorar el seguimiento de estudiantes.
-        </p>
-        <a href="https://github.com/neurolab-team/proyecto-neurolab" target="_blank">Ver proyecto</a>
-
-        <h3>Venta de Vehículos</h3>
-        <p>
-            Desarrollo de una aplicación web para la gestión y visualización de vehículos, permitiendo la
-            consulta y administración de información. Implementada con ASP.NET, C#, JavaScript, HTML y CSS.
-        </p>
-        <a href="https://github.com/Juandavm12/VentaVehiculos" target="_blank">Ver proyecto</a>
-
-        <h3>Agencia para Tramitar Visas</h3>
-        <p>
-            Desarrollo de una aplicación web para la gestión de trámites de visas, enfocada en la organización
-            y consulta de información de usuarios. Implementada con HTML, CSS y C#.
-        </p>
-        <a href="https://github.com/alejamc14/TramitesVisas" target="_blank">Ver proyecto</a>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/paula-andrea-calderon-quintero-40759226b" target="_blank">LinkedIn</a>
+      </p>
+      <p>
+        <a href="https://github.com/paucq" target="_blank">GitHub</a>
+      </p>
     </section>
+  </main>
+
+  <footer>
+    <p>© 2026 - Paula Andrea Calderon Quintero</p>
+  </footer>
 
 </body>
-
 </html>
