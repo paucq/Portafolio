@@ -45,12 +45,12 @@ nav a:hover {
   color: #e91e63;
 }
 
-/* Secciones */
-section {
-  margin-bottom: 40px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.section {
+  padding: 20px;             
+  margin: 20px 0;          
+  border: 1px solid #eee;
+  border-radius: 8px;       
+  background-color: #fff;    
 }
 
 /* Títulos secundarios */
