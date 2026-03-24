@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* H1 (más grande y con color) */
+h1 {
+  font-size: 2.5rem;
+  color: #e91e63; /* rosado elegante */
+  margin-bottom: 10px;
+}
+
+/* Navegación */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Títulos secundarios */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #f8bbd0;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Párrafos (color y tamaño específico) */
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Proyectos */
+ul {
+  list-style: none;
+}
+
+article {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+article:hover {
+  transform: translateY(-3px);
+}
+
+/* Enlaces (color diferente) */
+a {
+  color: #d81b60;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}
