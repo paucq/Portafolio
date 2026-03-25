@@ -55,6 +55,12 @@ nav a:hover {
   color: #5d1a7e;
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
 .section {
   padding: 20px;
   margin: 20px 40px;
@@ -80,9 +86,11 @@ p {
   margin-bottom: 10px;
 }
 
-/* Proyectos */
-ul {
+#proyectos ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  gap: 10px;
 }
 
 article {
