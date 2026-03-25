@@ -5,19 +5,29 @@
   box-sizing: border-box;
 }
 
-/* Estilo general */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fafafa;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ffffff;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
 }
 
-/* HEADER */
 header {
-  text-align: center;
-  margin-bottom: 40px;
+  background-color: #f2f3f7;
+  color: #5d1a7e; 
+  padding: 30px;
+  position: relative;
+}
+
+/* Línea vertical izquierda */
+header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #623d9e;
 }
 
 header img {
@@ -25,10 +35,10 @@ header img {
   margin-bottom: 15px;
 }
 
-/* H1 (más grande y con color) */
+
 h1 {
-  font-size: 2.5rem;
-  color: #e91e63; /* rosado elegante */
+  font-size: 2.8rem;
+  color:  #5d1a7e;
   margin-bottom: 10px;
 }
 
@@ -42,15 +52,16 @@ nav a {
 }
 
 nav a:hover {
-  color: #e91e63;
+  color: #5d1a7e;
 }
 
 .section {
-  padding: 20px;             
-  margin: 20px 0;          
+  padding: 20px;
+  margin: 20px 40px;
   border: 1px solid #eee;
-  border-radius: 8px;       
-  background-color: #fff;    
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* sombra suave */
 }
 
 /* Títulos secundarios */
@@ -58,15 +69,14 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #444;
-  border-bottom: 2px solid #f8bbd0;
+  border-bottom: 2px solid hwb(264 44% 24%);
   display: inline-block;
   padding-bottom: 5px;
 }
 
-/* Párrafos (color y tamaño específico) */
 p {
   font-size: 1rem;
-  color: #555;
+  color: #303030;
   margin-bottom: 10px;
 }
 
@@ -90,7 +100,7 @@ article:hover {
 
 /* Enlaces (color diferente) */
 a {
-  color: #d81b60;
+  color: #623d9e;
   text-decoration: none;
   font-weight: 500;
 }
@@ -99,10 +109,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
+  background-color: #f2f3f7;
+  color: #777;
+  padding: 20px;
   text-align: center;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #888;
 }
