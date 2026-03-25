@@ -14,12 +14,21 @@ body {
 
 header {
   background-color: #f2f3f7;
-  color: #5d1a7e; 
+  color: #5d1a7e;
   padding: 30px;
+  display: flex;
+  align-items: center; /* alinea verticalmente */
+  gap: 30px;
   position: relative;
 }
 
-/* Línea vertical izquierda */
+/* Contenedor del nombre + menú */
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header::before {
   content: "";
   position: absolute;
@@ -31,14 +40,23 @@ header::before {
 }
 
 header img {
-  border-radius: 50%;
-  margin-bottom: 15px;
+  width: 200px;   /* tamaño fijo */
+  height: 200px;  /* opcional para mantener proporción */
+  object-fit: cover; /* evita deformación */
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 h1 {
   font-size: 2.8rem;
-  color:  #5d1a7e;
+  color: #5d1a7e;
   margin-bottom: 10px;
 }
 
@@ -67,7 +85,8 @@ nav a:hover {
   border: 1px solid #eee;
   border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* sombra suave */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  /* sombra suave */
 }
 
 /* Títulos secundarios */
@@ -108,6 +127,7 @@ article:hover {
 
 /* Enlaces (color diferente) */
 a {
+  transition: color 0.3s ease;
   color: #623d9e;
   text-decoration: none;
   font-weight: 500;
@@ -115,6 +135,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #2980b9;
 }
 
 @media (max-width: 600px) {
@@ -141,7 +162,7 @@ a:hover {
 
 footer {
   background-color: #f2f3f7;
-  color: #777;
   padding: 20px;
   text-align: center;
 }
+
