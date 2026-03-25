@@ -117,6 +117,28 @@ a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
 footer {
   background-color: #f2f3f7;
   color: #777;
